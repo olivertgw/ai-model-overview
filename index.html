@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Lora:ital,wght@0,600;0,700;1,600&family=Titillium+Web:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{--ink:#15221f;--paper:#f4f1e9;--fog:#e7e3d8;--moss:#477657;--moss-dark:#27533b;--sun:#f3bd3d;--line:rgba(21,34,31,.16);--muted:#63706b}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Titillium Web',Arial,sans-serif;min-height:100vh}.shell{max-width:1220px;margin:auto;padding:28px 38px 56px}header{display:flex;align-items:center;justify-content:space-between;padding-bottom:28px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-size:15px;font-weight:800;letter-spacing:-.4px}.mark{width:29px;height:29px;border-radius:50%;background:var(--moss);position:relative;overflow:hidden}.mark:after{content:'';position:absolute;width:22px;height:22px;background:var(--sun);border-radius:50%;top:-10px;right:-6px}.status{font:500 11px 'DM Mono';color:var(--muted);display:flex;align-items:center;gap:8px}.status i{display:block;width:8px;height:8px;background:#66a56b;border-radius:99px;box-shadow:0 0 0 4px rgba(102,165,107,.14)}.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;padding:65px 0 42px;align-items:start}.hero h1{margin:0;max-width:700px;font-size:clamp(37px,5vw,67px);letter-spacing:-.065em;line-height:.98;font-weight:800}.hero h1 em{font-family:Lora,Georgia,serif;font-weight:600;color:var(--moss);letter-spacing:-.06em}.hero p{font-size:15px;line-height:1.7;max-width:340px;color:var(--muted);margin:0}.comparison{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#f8f6f0}.table-head,.model-row{display:grid;grid-template-columns:220px 1fr 76px;align-items:center}.table-head{height:46px;background:rgba(231,227,216,.62);padding:0 22px;font:500 10px 'DM Mono';letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}.scores{display:grid;grid-template-columns:repeat(var(--columns),1fr);gap:8px}.table-head .scores{text-align:center}.benchmark{display:inline-flex;align-items:center;justify-content:center;gap:5px;position:relative;cursor:help}.info{display:inline-grid;place-items:center;width:14px;height:14px;border:1px solid #9aa59f;border-radius:50%;font:500 9px Georgia,serif;letter-spacing:0;text-transform:none;color:#66736d}.tip{position:absolute;z-index:4;top:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(-3px);width:215px;padding:11px 12px;border-radius:9px;background:var(--ink);color:#f8f6f0;font:400 10px/1.55 'Titillium Web',Arial,sans-serif;text-align:left;letter-spacing:0;text-transform:none;opacity:0;visibility:hidden;pointer-events:none;box-shadow:0 8px 18px rgba(21,34,31,.18);transition:.16s}.tip:before{content:'';position:absolute;top:-5px;left:50%;width:9px;height:9px;background:var(--ink);transform:translateX(-50%) rotate(45deg)}.benchmark:hover .tip,.benchmark:focus-within .tip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}.tip strong{display:block;margin-bottom:3px;color:var(--sun);font-size:10px}.model-row{min-height:97px;padding:0 22px;border-top:1px solid var(--line);transition:.2s;cursor:pointer}.model-row:hover,.model-row.selected{background:#fffdf8}.model-row.selected{box-shadow:inset 4px 0 var(--sun)}.model-name{display:flex;align-items:center;gap:12px}.avatar{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:13px}.openai{background:#dbe8df;color:#27533b}.anthropic{background:#f2dfd5;color:#9d492f}.google{background:#e0e4f5;color:#4b56a2}.xai{background:#e7e2e8;color:#63486c}.meta{background:#f6e8c9;color:#92721c}.model-name strong{display:block;font-size:13px;letter-spacing:-.3px}.model-name small{font:500 10px 'DM Mono';color:var(--muted);margin-top:2px;display:block}.score-wrap{text-align:center}.score{width:37px;height:37px;display:grid;place-items:center;margin:auto;border-radius:50%;font:700 11px 'DM Mono';background:var(--fog);color:#4d5b56}.score.high{background:#d9ead9;color:var(--moss-dark)}.score.best{background:var(--sun);color:#3f351b;box-shadow:0 3px 0 #d69c1d}.overall{text-align:right;font:700 17px 'DM Mono';letter-spacing:-1px}.overall span{font-size:10px;letter-spacing:0;color:var(--muted);font-weight:500}.legend{display:flex;gap:12px;align-items:center;margin-top:13px;font:500 10px 'DM Mono';color:var(--muted)}.legend b{height:9px;width:9px;border-radius:50%;display:inline-block;margin-right:5px}.detail{margin-top:27px;border-top:1px solid var(--ink);padding-top:20px}.detail h2{margin:0 0 8px;font-size:19px;letter-spacing:-.7px}.detail p{font-size:13px;line-height:1.65;color:var(--muted);margin:0}.source{font:500 10px 'DM Mono';color:var(--muted);margin-top:33px}@media(max-width:800px){.shell{padding:20px}.hero{grid-template-columns:1fr;gap:24px;padding:45px 0 34px}.hero p{max-width:450px}.table-head,.model-row{grid-template-columns:145px 1fr 52px}.table-head{padding:0 12px}.model-row{padding:0 12px;min-height:83px}.scores{gap:2px}.score{width:28px;height:28px;font-size:9px}.table-head .scores span:nth-child(2),.table-head .scores span:nth-child(3),.table-head .scores span:nth-child(6),.score-wrap:nth-child(2),.score-wrap:nth-child(3),.score-wrap:nth-child(6){display:none}.scores{grid-template-columns:repeat(3,1fr)}.avatar{width:29px;height:29px}.model-name{gap:8px}.model-name strong{font-size:11px}.model-name small{font-size:8px}.overall{font-size:13px}.status{display:none}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+    :root{--ink:#15221f;--paper:#f4f1e9;--fog:#e7e3d8;--moss:#477657;--moss-dark:#27533b;--sun:#f3bd3d;--line:rgba(21,34,31,.16);--muted:#63706b}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Titillium Web',Arial,sans-serif;min-height:100vh}.shell{max-width:1220px;margin:auto;padding:28px 38px 56px}header{display:flex;align-items:center;justify-content:space-between;padding-bottom:28px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-size:15px;font-weight:800;letter-spacing:-.4px}.mark{width:29px;height:29px;border-radius:50%;background:var(--moss);position:relative;overflow:hidden}.mark:after{content:'';position:absolute;width:22px;height:22px;background:var(--sun);border-radius:50%;top:-10px;right:-6px}.status{font:500 11px 'DM Mono';color:var(--muted);display:flex;align-items:center;gap:8px}.status i{display:block;width:8px;height:8px;background:#66a56b;border-radius:99px;box-shadow:0 0 0 4px rgba(102,165,107,.14)}.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;padding:65px 0 42px;align-items:start}.hero h1{margin:0;max-width:700px;font-size:clamp(37px,5vw,67px);letter-spacing:-.065em;line-height:.98;font-weight:800}.hero h1 em{font-family:Lora,Georgia,serif;font-weight:600;color:var(--moss);letter-spacing:-.06em}.hero p{font-size:15px;line-height:1.7;max-width:340px;color:var(--muted);margin:0}.comparison{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#f8f6f0}.table-head,.model-row{display:grid;grid-template-columns:220px 1fr 76px;align-items:center}.table-head{height:46px;background:rgba(231,227,216,.62);padding:0 22px;font:500 10px 'DM Mono';letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}.scores{display:grid;grid-template-columns:repeat(var(--columns),1fr);gap:8px}.table-head .scores{text-align:center}.benchmark{display:inline-flex;align-items:center;justify-content:center;gap:5px;position:relative;cursor:help}.info{display:inline-grid;place-items:center;width:14px;height:14px;border:1px solid #9aa59f;border-radius:50%;font:500 9px Georgia,serif;letter-spacing:0;text-transform:none;color:#66736d}.tip{position:absolute;z-index:4;top:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(-3px);width:215px;padding:11px 12px;border-radius:9px;background:var(--ink);color:#f8f6f0;font:400 10px/1.55 'Titillium Web',Arial,sans-serif;text-align:left;letter-spacing:0;text-transform:none;opacity:0;visibility:hidden;pointer-events:none;box-shadow:0 8px 18px rgba(21,34,31,.18);transition:.16s}.tip:before{content:'';position:absolute;top:-5px;left:50%;width:9px;height:9px;background:var(--ink);transform:translateX(-50%) rotate(45deg)}.benchmark:hover .tip,.benchmark:focus-within .tip{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}.tip strong{display:block;margin-bottom:3px;color:var(--sun);font-size:10px}.model-row{min-height:97px;padding:0 22px;border-top:1px solid var(--line);transition:.2s;cursor:pointer}.model-row:hover,.model-row.selected{background:#fffdf8}.model-row.selected{box-shadow:inset 4px 0 var(--sun)}.model-name{display:flex;align-items:center;gap:12px}.avatar{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:13px}.openai{background:#dbe8df;color:#27533b}.anthropic{background:#f2dfd5;color:#9d492f}.google{background:#e0e4f5;color:#4b56a2}.xai{background:#e7e2e8;color:#63486c}.meta{background:#f6e8c9;color:#92721c}.deepseek{background:#dbe9f4;color:#295a86}.mistral{background:#f0dfd8;color:#93472f}.model-name strong{display:block;font-size:13px;letter-spacing:-.3px}.model-name small{font:500 10px 'DM Mono';color:var(--muted);margin-top:2px;display:block}.score-wrap{text-align:center}.score{width:37px;height:37px;display:grid;place-items:center;margin:auto;border-radius:50%;font:700 11px 'DM Mono';background:var(--fog);color:#4d5b56}.score.high{background:#d9ead9;color:var(--moss-dark)}.score.missing{background:transparent;color:#9aa59f;font-size:16px;font-weight:400}.score.best{background:var(--sun);color:#3f351b;box-shadow:0 3px 0 #d69c1d}.overall{text-align:right;font:700 17px 'DM Mono';letter-spacing:-1px}.overall span{font-size:10px;letter-spacing:0;color:var(--muted);font-weight:500}.legend{display:flex;gap:12px;align-items:center;margin-top:13px;font:500 10px 'DM Mono';color:var(--muted)}.legend b{height:9px;width:9px;border-radius:50%;display:inline-block;margin-right:5px}.detail{margin-top:27px;border-top:1px solid var(--ink);padding-top:20px}.detail h2{margin:0 0 8px;font-size:19px;letter-spacing:-.7px}.detail p{font-size:13px;line-height:1.65;color:var(--muted);margin:0}.source{font:500 10px 'DM Mono';color:var(--muted);margin-top:33px}@media(max-width:800px){.shell{padding:20px}.hero{grid-template-columns:1fr;gap:24px;padding:45px 0 34px}.hero p{max-width:450px}.table-head,.model-row{grid-template-columns:145px 1fr 52px}.table-head{padding:0 12px}.model-row{padding:0 12px;min-height:83px}.scores{gap:2px}.score{width:28px;height:28px;font-size:9px}.table-head .scores span:nth-child(2),.table-head .scores span:nth-child(3),.table-head .scores span:nth-child(6),.score-wrap:nth-child(2),.score-wrap:nth-child(3),.score-wrap:nth-child(6){display:none}.scores{grid-template-columns:repeat(3,1fr)}.avatar{width:29px;height:29px}.model-name{gap:8px}.model-name strong{font-size:11px}.model-name small{font-size:8px}.overall{font-size:13px}.status{display:none}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
   </style>
 </head>
 <body>
@@ -20,33 +20,58 @@
     <section class="detail"><div><h2 id="detailTitle"></h2><p id="detailText"></p></div></section><div class="source" id="sourceNote"></div>
   </main>
   <script>
-    /* AGENT: Ersetze ausschließlich den folgenden Token durch den vollständigen Inhalt von modelmeter-data.json. */
-    const data = {{MODELMETER_DATA_JSON}};
-
-    const benchmarks = data.benchmarks;
-    const models = data.models;
-    const ids = benchmarks.map(item => item.id);
-    let selected = 0;
-    document.documentElement.style.setProperty('--columns', ids.length);
-    document.title = data.meta.title;
-    document.getElementById('updatedAt').textContent = data.meta.updatedLabel;
-    document.getElementById('sourceNote').textContent = data.meta.sourceNote;
-    document.getElementById('benchmarkHeaders').innerHTML = benchmarks.map(item => `<span class="benchmark" tabindex="0">${item.label} <b class="info">i</b><span class="tip"><strong>${item.benchmark}</strong>${item.description}</span></span>`).join('');
-
     const escapeHtml = value => String(value).replace(/[&<>'"]/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character]));
-    const average = model => Math.round(ids.reduce((total, id) => total + model.scores[id], 0) / ids.length);
-    const detail = () => { const model = models[selected]; document.getElementById('detailTitle').textContent = model.name; document.getElementById('detailText').textContent = model.description; };
-    const render = () => {
-      const best = Object.fromEntries(ids.map(id => [id, Math.max(...models.map(model => model.scores[id]))]));
-      const ranking = [...models].sort((a, b) => average(b) - average(a));
-      document.getElementById('rows').innerHTML = ranking.map(model => {
-        const originalIndex = models.indexOf(model);
-        const scores = ids.map(id => { const value = model.scores[id]; const state = value === best[id] ? 'best' : value >= 88 ? 'high' : ''; return `<div class="score-wrap"><span class="score ${state}">${value}</span></div>`; }).join('');
-        return `<div class="model-row ${originalIndex === selected ? 'selected' : ''}" data-id="${originalIndex}"><div class="model-name"><span class="avatar ${escapeHtml(model.color)}">${escapeHtml(model.initial)}</span><span><strong>${escapeHtml(model.name)}</strong><small>${escapeHtml(model.company)}</small></span></div><div class="scores">${scores}</div><div class="overall">${average(model)}<span>/100</span></div></div>`;
-      }).join('');
-      document.querySelectorAll('.model-row').forEach(row => row.addEventListener('click', () => { selected = Number(row.dataset.id); detail(); render(); }));
-    };
-    render(); detail();
+
+    async function initialiseModelmeter() {
+      try {
+        const response = await fetch('./benchmarks.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        const benchmarks = data.benchmarks;
+        const models = data.models;
+        const ids = benchmarks.map(item => item.id);
+        let selected = 0;
+
+        document.documentElement.style.setProperty('--columns', ids.length);
+        document.title = data.meta.title;
+        document.getElementById('updatedAt').textContent = data.meta.updatedLabel;
+        document.getElementById('sourceNote').textContent = data.meta.sourceNote;
+        document.getElementById('benchmarkHeaders').innerHTML = benchmarks.map(item => `<span class="benchmark" tabindex="0">${escapeHtml(item.label)} <b class="info">i</b><span class="tip"><strong>${escapeHtml(item.benchmark)}</strong>${escapeHtml(item.description)}</span></span>`).join('');
+
+        const validScores = model => ids.map(id => model.scores[id]).filter(value => Number.isFinite(value));
+        const average = model => {
+          const values = validScores(model);
+          return values.length ? Math.round(values.reduce((total, value) => total + value, 0) / values.length) : null;
+        };
+        const coverage = model => validScores(model).length;
+        const detail = () => { const model = models[selected]; document.getElementById('detailTitle').textContent = model.name; document.getElementById('detailText').textContent = model.description; };
+        const render = () => {
+          const best = Object.fromEntries(ids.map(id => {
+            const values = models.map(model => model.scores[id]).filter(value => Number.isFinite(value));
+            return [id, values.length ? Math.max(...values) : null];
+          }));
+          const ranking = [...models].sort((a, b) => (average(b) ?? -1) - (average(a) ?? -1));
+          document.getElementById('rows').innerHTML = ranking.map(model => {
+            const originalIndex = models.indexOf(model);
+            const scores = ids.map(id => {
+              const value = model.scores[id];
+              if (!Number.isFinite(value)) return '<div class="score-wrap"><span class="score missing">–</span></div>';
+              const state = value === best[id] ? 'best' : value >= 88 ? 'high' : '';
+              return `<div class="score-wrap"><span class="score ${state}">${value}</span></div>`;
+            }).join('');
+            const modelAverage = average(model);
+            const overall = modelAverage === null ? '–' : `${modelAverage}<span>/100 · ${coverage(model)}/${ids.length}</span>`;
+            return `<div class="model-row ${originalIndex === selected ? 'selected' : ''}" data-id="${originalIndex}"><div class="model-name"><span class="avatar ${escapeHtml(model.color)}">${escapeHtml(model.initial)}</span><span><strong>${escapeHtml(model.name)}</strong><small>${escapeHtml(model.company)}</small></span></div><div class="scores">${scores}</div><div class="overall">${overall}</div></div>`;
+          }).join('');
+          document.querySelectorAll('.model-row').forEach(row => row.addEventListener('click', () => { selected = Number(row.dataset.id); detail(); render(); }));
+        };
+        render(); detail();
+      } catch (error) {
+        document.getElementById('rows').innerHTML = '<div style="padding:28px;font:500 13px Titillium Web,Arial,sans-serif;color:#63706b">Die Benchmark-Daten konnten gerade nicht geladen werden. Bitte Seite später erneut laden.</div>';
+        console.error('Modelmeter data error:', error);
+      }
+    }
+    initialiseModelmeter();
   </script>
 </body>
 </html>
