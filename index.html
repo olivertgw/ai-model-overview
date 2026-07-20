@@ -21,12 +21,11 @@
     <section class="detail"><div><h2 id="detailTitle"></h2><p id="detailText"></p></div></section><div class="source" id="sourceNote"></div>
   </main>
   <script>
-    /* DATA: Die Seite lädt modelmeter-data.json aus demselben GitHub-Pages-Verzeichnis. Der Agent aktualisiert nur diese JSON-Datei. */
     const escapeHtml = value => String(value).replace(/[&<>'"]/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[character]));
 
     async function initialiseModelmeter() {
       try {
-        const response = await fetch('./modelmeter-data.json', { cache: 'no-store' });
+        const response = await fetch('./benchmarks.json', { cache: 'no-store' });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
         const benchmarks = data.benchmarks;
