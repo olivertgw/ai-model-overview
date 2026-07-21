@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Modelmeter — KI-Benchmarks im Vergleich",
-    "updatedAt": "2026-07-17",
+    "updatedAt": "2026-07-21",
     "updatedLabel": "Juli 2026",
     "scoreScale": "0–100",
     "sourceNote": "Orientierungswerte zur Modellselektion · Benchmark-Scores sind keine Garantie für die Qualität im konkreten Use Case."
@@ -58,11 +58,11 @@
       "initial": "D",
       "color": "deepseek",
       "scores": {
-        "gpqa-diamond": null,
+        "gpqa-diamond": 74.9,
         "mmlu-pro": 83.7,
         "mmmu-pro": null,
         "ifeval": 86.1,
-        "swe-bench": null,
+        "swe-bench": 66.0,
         "arc-agi-2": null
       },
       "description": "Ein leistungsstarkes Modell von DeepSeek."
@@ -74,11 +74,11 @@
       "initial": "A",
       "color": "anthropic",
       "scores": {
-        "gpqa-diamond": null,
+        "gpqa-diamond": 94.0,
         "mmlu-pro": null,
         "mmmu-pro": null,
         "ifeval": null,
-        "swe-bench": 95,
+        "swe-bench": 95.0,
         "arc-agi-2": null
       },
       "description": "Ein Modell von Anthropic mit Fokus auf Coding."
@@ -90,11 +90,11 @@
       "initial": "G",
       "color": "google",
       "scores": {
-        "gpqa-diamond": null,
-        "mmlu-pro": null,
-        "mmmu-pro": null,
+        "gpqa-diamond": 82.8,
+        "mmlu-pro": 83.2,
+        "mmmu-pro": 79.7,
         "ifeval": null,
-        "swe-bench": null,
+        "swe-bench": 60.4,
         "arc-agi-2": null
       },
       "description": "Ein schnelles und effizientes Modell von Google."
@@ -106,14 +106,30 @@
       "initial": "G",
       "color": "google",
       "scores": {
-        "gpqa-diamond": 86.4,
+        "gpqa-diamond": 83,
         "mmlu-pro": null,
         "mmmu-pro": 4.9,
         "ifeval": null,
-        "swe-bench": null,
+        "swe-bench": 63.2,
         "arc-agi-2": 4.9
       },
       "description": "Ein leistungsstarkes Pro-Modell von Google."
+    },
+    {
+      "id": "gemini-3-flash-preview",
+      "name": "Gemini 3 Flash Preview",
+      "company": "Google",
+      "initial": "G",
+      "color": "google",
+      "scores": {
+        "gpqa-diamond": 90.4,
+        "mmlu-pro": null,
+        "mmmu-pro": 81.2,
+        "ifeval": null,
+        "swe-bench": 78,
+        "arc-agi-2": 33.6
+      },
+      "description": "Eine Vorschauversion des Gemini 3 Flash Modells von Google."
     },
     {
       "id": "gemini-3.1-pro-preview",
@@ -148,29 +164,13 @@
       "description": "Ein schnelles Flash-Modell von Google."
     },
     {
-      "id": "gemini-3-flash-preview",
-      "name": "Gemini 3 Flash Preview",
-      "company": "Google",
-      "initial": "G",
-      "color": "google",
-      "scores": {
-        "gpqa-diamond": 90.4,
-        "mmlu-pro": null,
-        "mmmu-pro": 81.2,
-        "ifeval": null,
-        "swe-bench": 78,
-        "arc-agi-2": 33.6
-      },
-      "description": "Eine Vorschauversion des Gemini 3 Flash Modells von Google."
-    },
-    {
       "id": "gpt-5",
       "name": "GPT-5",
       "company": "OpenAI",
       "initial": "O",
       "color": "openai",
       "scores": {
-        "gpqa-diamond": 85.7,
+        "gpqa-diamond": 88.1,
         "mmlu-pro": 78.4,
         "mmmu-pro": 78.4,
         "ifeval": null,
@@ -178,6 +178,38 @@
         "arc-agi-2": null
       },
       "description": "Ein vielseitiger Allrounder mit besonders starken Ergebnissen bei komplexem Reasoning, visueller Analyse und präziser Instruktionsbefolgung."
+    },
+    {
+      "id": "gpt-5-mini",
+      "name": "GPT-5 Mini",
+      "company": "OpenAI",
+      "initial": "O",
+      "color": "openai",
+      "scores": {
+        "gpqa-diamond": 82.3,
+        "mmlu-pro": null,
+        "mmmu-pro": null,
+        "ifeval": null,
+        "swe-bench": null,
+        "arc-agi-2": null
+      },
+      "description": "Eine Mini-Version des GPT-5 Modells von OpenAI."
+    },
+    {
+      "id": "gpt-5-pro",
+      "name": "GPT-5 Pro",
+      "company": "OpenAI",
+      "initial": "O",
+      "color": "openai",
+      "scores": {
+        "gpqa-diamond": null,
+        "mmlu-pro": null,
+        "mmmu-pro": null,
+        "ifeval": null,
+        "swe-bench": null,
+        "arc-agi-2": null
+      },
+      "description": "Die Pro-Version des GPT-5 Modells von OpenAI."
     },
     {
       "id": "gpt-5.1",
@@ -340,45 +372,13 @@
       "description": "Das Terra-Modell der GPT-5.6 Serie von OpenAI."
     },
     {
-      "id": "gpt-5-mini",
-      "name": "GPT-5 Mini",
-      "company": "OpenAI",
-      "initial": "O",
-      "color": "openai",
-      "scores": {
-        "gpqa-diamond": null,
-        "mmlu-pro": null,
-        "mmmu-pro": null,
-        "ifeval": null,
-        "swe-bench": null,
-        "arc-agi-2": null
-      },
-      "description": "Eine Mini-Version des GPT-5 Modells von OpenAI."
-    },
-    {
-      "id": "gpt-5-pro",
-      "name": "GPT-5 Pro",
-      "company": "OpenAI",
-      "initial": "O",
-      "color": "openai",
-      "scores": {
-        "gpqa-diamond": null,
-        "mmlu-pro": null,
-        "mmmu-pro": null,
-        "ifeval": null,
-        "swe-bench": null,
-        "arc-agi-2": null
-      },
-      "description": "Die Pro-Version des GPT-5 Modells von OpenAI."
-    },
-    {
       "id": "gpt-oss-120b",
       "name": "GPT oss (120b)",
       "company": "OpenAI",
       "initial": "O",
       "color": "openai",
       "scores": {
-        "gpqa-diamond": 80.7,
+        "gpqa-diamond": 80.9,
         "mmlu-pro": 80.7,
         "mmmu-pro": null,
         "ifeval": null,
@@ -394,7 +394,7 @@
       "initial": "A",
       "color": "anthropic",
       "scores": {
-        "gpqa-diamond": 73.3,
+        "gpqa-diamond": 73,
         "mmlu-pro": null,
         "mmmu-pro": null,
         "ifeval": null,
@@ -410,8 +410,8 @@
       "initial": "M",
       "color": "meta",
       "scores": {
-        "gpqa-diamond": 92.1,
-        "mmlu-pro": null,
+        "gpqa-diamond": 50.5,
+        "mmlu-pro": 68.9,
         "mmmu-pro": null,
         "ifeval": 92.1,
         "swe-bench": null,
@@ -426,8 +426,8 @@
       "initial": "M",
       "color": "meta",
       "scores": {
-        "gpqa-diamond": null,
-        "mmlu-pro": null,
+        "gpqa-diamond": 69.8,
+        "mmlu-pro": 80.5,
         "mmmu-pro": 59.6,
         "ifeval": null,
         "swe-bench": null,
@@ -442,7 +442,7 @@
       "initial": "M",
       "color": "mistral",
       "scores": {
-        "gpqa-diamond": null,
+        "gpqa-diamond": 43.9,
         "mmlu-pro": null,
         "mmmu-pro": null,
         "ifeval": 82.9,
@@ -458,11 +458,11 @@
       "initial": "O",
       "color": "openai",
       "scores": {
-        "gpqa-diamond": 76.4,
+        "gpqa-diamond": 83.3,
         "mmlu-pro": 93.9,
         "mmmu-pro": 76.4,
         "ifeval": 93.9,
-        "swe-bench": null,
+        "swe-bench": 69.1,
         "arc-agi-2": 6.5
       },
       "description": "Ein Modell von OpenAI."
@@ -490,11 +490,11 @@
       "initial": "O",
       "color": "openai",
       "scores": {
-        "gpqa-diamond": null,
+        "gpqa-diamond": 81.4,
         "mmlu-pro": null,
         "mmmu-pro": null,
         "ifeval": null,
-        "swe-bench": null,
+        "swe-bench": 68.1,
         "arc-agi-2": null
       },
       "description": "Eine Mini-Version des o4 Modells von OpenAI."
@@ -570,7 +570,7 @@
       "initial": "A",
       "color": "anthropic",
       "scores": {
-        "gpqa-diamond": null,
+        "gpqa-diamond": 83.4,
         "mmlu-pro": null,
         "mmmu-pro": null,
         "ifeval": null,
